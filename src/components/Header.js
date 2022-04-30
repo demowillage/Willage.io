@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 
+import willageLogo from '../images/logo-willage.png'
+
 export const Header = ({ isHomepage }) => {
   const homepageClass = isHomepage ? 'homepage-header' : ''
   return (
