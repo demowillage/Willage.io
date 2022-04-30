@@ -11,7 +11,7 @@ export const HomepageBanner = () => (
     }}
   >
     <div className="banner-content container">
-      <h2 className="banner-title">John Doe</h2>
+      <h2 className="banner-title">Willage.io</h2>
       <p className="banner-description">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
         Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
