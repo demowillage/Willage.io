@@ -26,6 +26,11 @@ footer {
   color: #72767b;
 }
 
+.header-logo {
+  width: 150px;
+  margin-top: 0px;
+}
+
 .homepage-header.site-header,
 .homepage-header.site-header a {
   color: #ffffff;
