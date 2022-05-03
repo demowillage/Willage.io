@@ -26,11 +26,6 @@ footer {
   color: #72767b;
 }
 
-.header-logo {
-  width: 150px;
-  margin-top: 0px;
-}
-
 .homepage-header.site-header,
 .homepage-header.site-header a {
   color: #ffffff;
@@ -72,6 +67,42 @@ footer {
 
 .banner-content {
   text-align: center;
+}
+
+.homepage-slider-banner {
+  margin: -80px 0 80px;
+  padding: 10em 0 8em;
+  background-position: center center;
+  background-size: cover;
+  color: #ffffff;
+  line-height: 1.75;
+  text-align: center;
+}
+
+.slider-content {
+  text-align: right;
+}
+
+.top-slider-content {
+  margin-left: left;
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 70px;
+}
+
+.slider-title {
+  margin-right: right;
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 70px;
+}
+
+.slider-description {
+  margin-right: right;
+  margin-left: auto;
+  width: 40%;
 }
 
 .banner-title,
@@ -132,8 +163,8 @@ footer {
   color: #484d52;
   letter-spacing: 1.14;
   line-height: 1.5em;
-  quotes: '\201C''\201D''\2018''\2019';
-  text-align: center;
+  /* quotes: '\201C''\201D''\2018''\2019';
+  text-align: center; */
 }
 
 .quote blockquote:before,
@@ -216,6 +247,99 @@ footer a {
 .footer-logo {
   width: 30px;
   margin-top: 10px;
+}
+
+.header-logo {
+  width: 150px;
+  margin-top: 0px;
+}
+
+.line {
+  width: 2px;
+  height: 500px;
+  background: white;
+  transition: height 2s;
+  margin: 20px;
+  align-content: right;
+  margin-right: right;
+  margin-left: auto;
+}
+
+.line:hover {
+  height: 295px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 80px 200px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('../images/bench-in-forrest.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  /* width: 50%; */
+}
+
+.upoverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 2s ease;
+}
+
+.leftoverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  overflow: hidden;
+  width: 95%;
+  height: 100%;
+  transition: .5s ease;
+  transition: opacity 3s;
+}
+
+.container:hover .upoverlay {
+  height: 115%;
+}
+
+.container:hover .leftoverlay {
+  width: 95%;
+  opacity: 1;
+  left: 0;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 /* Media Queries */
